@@ -1,0 +1,31 @@
+let a = 'hello';
+let b = 'owu';
+let c = 'com';
+let d = 'ua';
+let e = 1;
+let f = 10;
+let g = -999;
+let h = 123;
+let j= 3.14;
+let k = 2.7;
+let o = 16;
+let t = true;
+let l= false;
+console.log(a,b,c,d,e,f,g,h,j,k,o,t,l);
+alert(a,b,c,d,e,f,g,h,j,k,o,t,l);
+document.write(a,b,c,d,e,f,g,h,j,k,o,t,l)
+let firstName = "Vlad";
+let middleName = "Makar";
+let lastName = "Ruslanovych"
+let person = firstName+middleName+lastName;
+console.log(person);
+let x = 100;
+let v= '100';
+let s = true;
+console.log(typeof x);
+console.log(typeof v);
+console.log(typeof s);
+let name = prompt("Name");
+let thirdname = prompt("LastName?");
+let year = prompt("Year?");
+console.log(name,thirdname,+year);
