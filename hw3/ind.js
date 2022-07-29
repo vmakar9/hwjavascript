@@ -1,7 +1,7 @@
 let x = +prompt("Input number");
 if(x===0){
     console.log("Wrong");
-}else if(x<0 || x>0){
+}else {
     console.log("Right")
 }
 
