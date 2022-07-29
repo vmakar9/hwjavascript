@@ -59,11 +59,7 @@ if(a<b){
     console.log("Numbers are the same");
 }
 
-let x= +!!-prompt("Input");
-if (x===0 || x===undefined || x===false || x===NaN || x==='' ){
-    x = "default";
-    console.log(x);
-}
-else{
-    console.log(x);
+let x;
+if (x===0 || x===false ||x===NaN || x===''|| x===undefined ){
+  x="default";
 }
