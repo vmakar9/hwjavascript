@@ -64,16 +64,23 @@ let fon=(array,i)=>{
 }
 fon(mass,1);*/
 /*Сворити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.*/
-let pon=(array)=>{
-        for (let i = 0;i<=1 ;i++) {
-            if (!array[i]) {
-                let temp = array[i];
-                array[i] = array[i + 1];
-                array[i + 1] = temp;
-                return array;
-            }
-
-        }
+let pon=(arr)=>{
+    const res = []
+ let count = 0
+ let index = 0
+ for (let i = 0; i < arr.length; i++) {
+     if (arr[i] === 0) {
+         count++
+     } else {
+         res[index++]=arr[i]
+     }
+ }
+console.log(res);
+ let zeroCount = res.length
+ for (let i = 0; i < count; i++) {
+    res[zeroCount++]=0
+ }
+ console.log(res);
 }
-let average = [1,0,3,0];
-console.log(pon(average));
+let average = [1,0,6,0,3];
+pon(average);
