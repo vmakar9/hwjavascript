@@ -86,22 +86,25 @@ console.log(capitalize(str));*/
 someemail@gmail.com
 someeMAIL@gmail.com
 someeMAIL@i.ua
-some.email@gmail.com
+some.email@gmail.com*/
 let str1="someemail@gmail.com";
 let str2 ="someeMAIL@gmail.com";
 let str3 ="someeMAIL@i.ua";
 let str4 ="meeMAIL@i.ua";
 let str5 ="some.email@gmail.com"
 function validator(str){
-   let indexof = str.indexOf("@");
-   let infotorav=str.substring(0,indexof);
-   let infoafterrav=str.substring(indexof,1);
-   if (infotorav.indexOf(".")){
-       console.log("Wrong email");
+   let arrayemail = str.split("@");
+   if(arrayemail >2){
+       return false;
    }
-
+   const [name,alldom]= arrayemail;
+   const [beforedot,afterdot]= alldom.split(".");
+   if(beforedot.length<2 || !afterdot ||!name){
+      return false;
+   }
+   return true;
 }
-console.log(validator(str4));*/
+console.log(validator(str1));
 /*є масив відсортувати його в спадаючому порядку за кількістю елементів в полі modules
 let coursesArray = [
     {
@@ -194,7 +197,7 @@ console.log(cutString(str,5));*/
 - знайти книжку/ки з найдовшою назвою
 - знайти книжку/ки які писали 2 автори
 - знайти книжку/ки які писав 1 автор
-- вісортувати книжки по кількості сторінок по зростанню*/
+- вісортувати книжки по кількості сторінок по зростанню
 let books = [
     {name: 'Some Bkvnook', pages: 200, autors: ['somename', 'name', 'name', 'name'], ganre: ['aifusdgf']},
     {name: 'Some Bookd', pages: 300, autors: ['somename'], ganre: ['aifusdgf','deqsd']},
@@ -235,4 +238,4 @@ let oneautorsBook =books.forEach(book=>{
 })
 console.log(max);
 books.sort((a,b)=>a.pages-b.pages);
-console.log(books);
+console.log(books);*/
