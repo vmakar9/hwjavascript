@@ -89,7 +89,7 @@ console.log(car1);*/
 -- info () - яка виводить всю інформацію про автомобіль в форматі `назва поля - значення поля`
 -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
 -- changeYear (newValue) - змінює рік випуску на значення newValue
--- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car*/
+-- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і додає його в поточний об'єкт car
 class Car{
     constructor(model,producer,year,maxspeed,volume) {
         this.model = model;
@@ -122,11 +122,11 @@ car1.info();
 car1.changeYear(2020);
 car1.addDriver("Ilon");
 car1.increaseSpeed(220);
-console.log(car1);
+console.log(car1);*/
 /*створити класс/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги. Створити масив з 10 попелюшок.
 Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
 За допомоги циклу знайти яка попелюшка повинна бути з принцом.
-Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
+Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку*/
 class Cinderella {
     constructor(name, age, size) {
         this.name = name;
@@ -134,7 +134,13 @@ class Cinderella {
         this.size = size;
     }
 }
-
+class Prince{
+    constructor(name,age,size) {
+        this.name =name;
+        this.age =age;
+        this.size =size;
+    }
+}
 let arr = [
     new Cinderella('Vika',21,38),
     new Cinderella('Tanya',20,40),
@@ -147,10 +153,10 @@ let arr = [
     new Cinderella('Anya',22,42),
     new Cinderella('Masha',21,36)
 ]
-let prince = {name:"vasyl",age:24,size:39}
+let prince = new Prince("vasyl",25,39)
 for(const girl of arr){
     if(prince.size===girl.size){
         console.log(`Cinderella name is ${girl.name}`);
     }
 }
-console.log(arr.find(value => value.size===prince.size));*/
+console.log(arr.find(value => value.size===prince.size));
