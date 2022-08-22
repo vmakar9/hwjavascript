@@ -1,0 +1,25 @@
+.title{
+   justify-content: center;
+    display: flex;
+    border: 5px maroon dashed;
+    margin-bottom: 10px;
+}
+.duration{
+    border: 5px maroon dashed;
+    width: 200px;
+    margin-right: 100px;
+    text-align: center;
+}
+.hourduration{
+    border: 5px maroon dashed;
+    width: 400px;
+    text-align: center;
+}
+.dur{
+    display: flex;
+
+}
+ul{
+    border: 5px maroon dashed;
+    padding-bottom: 5px;
+}
