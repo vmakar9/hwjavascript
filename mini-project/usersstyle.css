@@ -1,0 +1,31 @@
+body{
+    background: indigo;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+p{
+    vertical-align: center;
+    justify-content: center;
+    align-content: center;
+    border: 10px maroon solid;
+    background: black;
+    color: aqua;
+}
+button{
+    vertical-align: center;
+    align-items: center;
+    width: 100%;
+    background: maroon;
+    color: aliceblue;
+    border: aliceblue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+ul>li {
+    border: 5px maroon solid;
+    background: black;
+    color: aqua;
+}

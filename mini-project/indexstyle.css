@@ -1,0 +1,22 @@
+body{
+    background: indigo;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: 10px maroon solid;
+    background: black;
+    color: aqua;
+}
+button{
+    align-items: center;
+    vertical-align: center;
+    margin-left: 10px;
+    background: maroon;
+    color: aliceblue;
+    border: aliceblue;
+    width: 100px;
+}
