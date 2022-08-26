@@ -16,4 +16,5 @@ fetch("https://jsonplaceholder.typicode.com/users")
         location.href=`user.html?id=${user.id}`;
     }
     div.appendChild(button);
+
  }))

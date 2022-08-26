@@ -49,7 +49,6 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
             button1.innerText = "post of current user"
             button1.onclick = function () {
                 document.body.appendChild(ul);
-
             }
             document.body.appendChild(button1)
         })
