@@ -24,6 +24,7 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
         let h7 = document.createElement("p");
         h7.innerText = JSON.stringify(users.company);
         div.append(h,h1,h2,h3,h4,h5,h6,h7);
+        div.classList.add('dv');
         document.body.appendChild(div);
         fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
             .then(response => response.json())
@@ -35,7 +36,7 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
                     ul.appendChild(li)
                     let button2 = document.createElement('button')
                     button2.innerText = "more information"
-                    ul.appendChild(button2);
+                    li.appendChild(button2);
                     button2.onclick = function () {
                         location.href = `post-details.html?id=${users.id}`
                     }

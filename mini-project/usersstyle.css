@@ -21,11 +21,15 @@ button{
     background: maroon;
     color: aliceblue;
     border: aliceblue;
-    margin-top: 10px;
-    margin-bottom: 10px;
+
+
 }
 ul>li {
     border: 5px maroon solid;
     background: black;
     color: aqua;
+    margin-bottom: 10px;
+}
+ul{
+    text-align: center;
 }
