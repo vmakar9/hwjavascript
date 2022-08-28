@@ -15,14 +15,15 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
         h2.innerText = users.username;
         let h3 = document.createElement("p");
         h3.innerText = users.email;
+        let ul = document.createElement('ul');
         let h4 = document.createElement("p");
-        h4.innerText = JSON.stringify(users.address);
+        h4.innerText = JSON.stringify(users.address).replace(/[{}"]/gi, " ");
         let h5 = document.createElement("p");
         h5.innerText = users.phone;
         let h6 = document.createElement("p");
         h6.innerText = users.website;
         let h7 = document.createElement("p");
-        h7.innerText = JSON.stringify(users.company);
+        h7.innerText = JSON.stringify(users.company).replace(/[{}"]/gi, " ");;
         div.append(h,h1,h2,h3,h4,h5,h6,h7);
         div.classList.add('dv');
         document.body.appendChild(div);
